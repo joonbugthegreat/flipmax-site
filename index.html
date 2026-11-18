@@ -1,14 +1,124 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FlipMax: find cars to flip for profit</title>
-<meta name="description" content="FlipMax shows real cars for sale near you and tells you the most you should pay to hit the profit you want.">
-<link rel="stylesheet" href="/site.css"></head><body><main><a class="logo" href="/">Flip<b>Max</b></a>
-<section class="hero"><h1>Know your number before you hand over cash.</h1>
-<p>FlipMax is built for car flippers. See real cars for sale near you, check any deal in seconds, and get a straight answer on what to pay.</p>
-<span class="pill">Coming soon to the App Store</span></section>
-<div class="cards">
-<div class="card"><h3>Find deals near you</h3><p>Real dealer and private seller cars in your area. Filter by make, model, price and distance.</p></div>
-<div class="card"><h3>Check any deal</h3><p>A FlipMax Rating from 0 to 100, the most you should pay, and how fast it should sell at three prices.</p></div>
-<div class="card"><h3>Track every flip</h3><p>Your Garage, your repairs and your profit history in one place.</p></div>
+<title>FlipMax: know the most you should pay for any car</title>
+<meta name="description" content="FlipMax shows real cars for sale near you and tells you the most you should pay to hit the profit you want. Free to try on iPhone.">
+<link rel="stylesheet" href="/site.css">
+<style>
+.hero h1{font-size:40px;margin-top:44px}
+.sub{font-size:19px;color:#dfe7df}
+.form{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.form input{flex:1 1 220px;padding:15px 16px;border-radius:14px;border:1px solid #2a382c;background:#0f1511;color:#fff;font-size:17px}
+.form button{flex:0 0 auto;padding:15px 22px;border-radius:14px;border:0;background:#3dff5a;color:#04130a;font-weight:800;font-size:17px;cursor:pointer}
+.note{font-size:15px;color:#8a968a;margin-top:10px}
+.msg{font-weight:700;color:#3dff5a;margin-top:12px;min-height:22px}
+.deal{border:1px solid #2c4a31;border-radius:20px;background:#0f1511;padding:20px;margin:36px 0 8px;box-shadow:0 0 60px rgba(61,255,90,.12)}
+.deal .tag{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8a968a}
+.deal h3{margin:6px 0 2px;color:#fff;font-size:20px}
+.deal .row{display:flex;justify-content:space-between;padding:11px 0;border-top:1px solid #1f2a21;color:#c9d3c9}
+.deal .row b{color:#fff}.deal .row.big b{color:#3dff5a;font-size:19px}
+.rate{display:flex;align-items:center;gap:12px;margin:12px 0 14px}
+.rate .n{font-size:34px;font-weight:900;color:#3dff5a}
+.bar{flex:1;height:8px;border-radius:99px;background:#1f2a21;overflow:hidden}.bar i{display:block;height:100%;width:86%;background:#3dff5a}
+section{margin-top:56px}
+.steps{counter-reset:s;display:grid;gap:14px;margin-top:16px}
+.step{border:1px solid #1f2a21;border-radius:16px;padding:18px 18px 18px 62px;background:#0f1511;position:relative}
+.step:before{counter-increment:s;content:counter(s);position:absolute;left:18px;top:18px;width:30px;height:30px;border-radius:99px;background:#3dff5a;color:#04130a;font-weight:900;display:grid;place-items:center}
+.step h3{margin:0 0 4px;color:#fff;font-size:18px}.step p{margin:0}
+.plans{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:16px}
+.plan{border:1px solid #1f2a21;border-radius:16px;padding:18px;background:#0f1511}
+.plan h3{margin:0;color:#fff}.plan .p{font-size:26px;font-weight:900;color:#fff;margin:6px 0}.plan ul{padding-left:18px;margin:8px 0 0}
+.plan.hot{border-color:#3dff5a}
+details{border-bottom:1px solid #1f2a21;padding:14px 0}summary{cursor:pointer;color:#fff;font-weight:700}
+details p{margin:10px 0 0}
+</style></head><body><main><a class="logo" href="/">Flip<b>Max</b></a>
+
+<section class="hero" style="margin-top:0">
+<h1>Know the most you should pay for any car in 10 seconds.</h1>
+<p class="sub">Most bad flips are lost at the purchase, not the sale. FlipMax finds real cars for sale near you and gives you one number before you hand over cash: the most you can pay and still hit your profit.</p>
+<form class="form" id="f1"><input type="email" name="email" placeholder="Your email" autocomplete="email" required><button type="submit">Get early access</button></form>
+<p class="note">Launching on the iPhone App Store the week of November 23. Free to try. No card needed.</p>
+<p class="msg" id="m1" role="status"></p>
+
+<div class="deal"><span class="tag">Example</span>
+<h3>2015 Toyota Camry SE</h3><span class="note" style="margin:0">128,000 miles</span>
+<div class="rate"><span class="n">86</span><div style="flex:1"><div class="note" style="margin:0 0 6px">FlipMax Rating, strong flip</div><div class="bar"><i></i></div></div></div>
+<div class="row"><span>Asking price</span><b>$6,500</b></div>
+<div class="row big"><span>Most you should pay</span><b>$5,400</b></div>
+<div class="row"><span>Estimated profit</span><b>$1,600</b></div>
 </div>
-<p class="muted">Prices, profit numbers and ratings are estimates, not guarantees. Always inspect a car yourself before you buy. Listings are for the United States.</p>
-<footer><a href="/">Home</a><a href="/terms">Terms of Use</a><a href="/privacy">Privacy Policy</a><a href="mailto:flipmax.support@gmail.com">Support</a><p class="muted">FlipMax is operated by Stacy Maxxing LLC, Grand Junction, Colorado.</p></footer></main></body></html>
+<p class="note">Example only. Numbers are estimates, not guarantees.</p>
+</section>
+
+<section>
+<h2>Why good looking deals turn into losses</h2>
+<p>You are not bad at flipping. The numbers you were given are wrong for flipping.</p>
+<ul>
+<li><b>Asking prices are not selling prices.</b> The listings you compare against are what sellers hope for, not what a car sells for this week.</li>
+<li><b>Book values run high on high mile cars.</b> A 250,000 mile sedan does not sell for what a price guide says.</li>
+<li><b>The small costs get forgotten.</b> Title, fees, a set of tires and a detail can eat the whole profit.</li>
+</ul>
+<h2>How FlipMax gets to one number</h2>
+<p>It works backward. FlipMax starts with the price the car should sell at fast in your area, then takes off your fees, your repairs and the profit you want. What is left is the most you should pay. If the seller wants more, you negotiate or walk.</p>
+</section>
+
+<section>
+<h2>Three steps, about a minute</h2>
+<div class="steps">
+<div class="step"><h3>Find cars near you</h3><p>Real dealer and private seller cars, newest first. Filter by make, model, price and distance.</p></div>
+<div class="step"><h3>Check the deal</h3><p>Scan the VIN or pick the car. Get a FlipMax Rating from 0 to 100, the most you should pay, and how fast it should sell at three prices.</p></div>
+<div class="step"><h3>Track the flip</h3><p>Your Garage keeps every car, repair and sale, so you always know what you really made.</p></div>
+</div>
+</section>
+
+<section>
+<h2>Try it before you pay anything</h2>
+<p>You get 5 searches and 1 full Deal Check free. No card, no account. If it does not save you from one bad buy, delete it and you have lost nothing. Paid plans can be cancelled any time in your Apple settings.</p>
+<div class="plans">
+<div class="plan"><h3>Free</h3><div class="p">$0</div><ul><li>5 searches</li><li>1 full Deal Check</li><li>1 car in your Garage</li></ul></div>
+<div class="plan hot"><h3>Pro</h3><div class="p">$29.99<span class="note"> a month</span></div><ul><li>Unlimited searches</li><li>Up to 50 cars per search</li><li>100 Deal Checks a month</li><li>Garage up to 5 cars</li></ul></div>
+<div class="plan"><h3>Dealer</h3><div class="p">$59.99<span class="note"> a month</span></div><ul><li>Unlimited searches</li><li>300 Deal Checks a month</li><li>Auction tools</li><li>Unlimited Garage</li></ul></div>
+</div>
+<p class="note">Yearly plans: Pro $199.99, Dealer $399.99. Fair use limits apply to unlimited searches.</p>
+</section>
+
+<section>
+<h2>Built for people who actually flip</h2>
+<p>FlipMax was shaped with a flipper who buys and sells cars every week. When the app's price on a high mile car came out too high, we rebuilt the math around what that car really moves for. That is the standard: numbers a working flipper would bet his own cash on.</p>
+</section>
+
+<section>
+<h2>Questions</h2>
+<details><summary>Is it really free to try?</summary><p>Yes. 5 searches and 1 full Deal Check with no card and no account.</p></details>
+<details><summary>Where do the cars come from?</summary><p>Licensed listing data from dealers and private sellers across the United States. We do not own, sell or inspect the cars.</p></details>
+<details><summary>Is the profit guaranteed?</summary><p>No. Every price, profit number and rating is an estimate. Always inspect the car and check the title yourself before you buy.</p></details>
+<details><summary>What phones does it work on?</summary><p>iPhone at launch, in the United States.</p></details>
+<details><summary>Do I need a dealer license?</summary><p>That depends on your state. Most states limit how many cars a person can sell in a year without one. Check your state's rule.</p></details>
+<details><summary>How do I cancel?</summary><p>Any time, in your Apple Account settings under Subscriptions.</p></details>
+</section>
+
+<section>
+<h2>Be first in when it opens</h2>
+<p>Drop your email and you will get the download link the morning FlipMax goes live.</p>
+<form class="form" id="f2"><input type="email" name="email" placeholder="Your email" autocomplete="email" required><button type="submit">Get early access</button></form>
+<p class="msg" id="m2" role="status"></p>
+<p class="note">One email at launch. We do not sell your email.</p>
+</section>
+
+<footer><a href="/">Home</a><a href="/terms">Terms of Use</a><a href="/privacy">Privacy Policy</a><a href="mailto:flipmax.support@gmail.com">Support</a><p class="muted">FlipMax is operated by Stacy Maxxing LLC, Grand Junction, Colorado.</p></footer>
+</main>
+<script>
+(function(){
+var URL_='https://exwxkfnyvjivudmctiqb.supabase.co/rest/v1/waitlist';
+var KEY='sb_publishable_1jSTkTXg-BQIAhulFOtn2g__F6I7O1_';
+var src=(new URLSearchParams(location.search).get('src')||'site').slice(0,60);
+function wire(fid,mid){var f=document.getElementById(fid),m=document.getElementById(mid);
+f.addEventListener('submit',function(e){e.preventDefault();var b=f.querySelector('button'),em=f.email.value.trim();
+if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){m.textContent='Enter a valid email.';return;}
+b.disabled=true;m.textContent='Saving...';
+fetch(URL_,{method:'POST',headers:{'apikey':KEY,'Authorization':'Bearer '+KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify({email:em,source:src})})
+.then(function(r){if(r.ok||r.status===409){m.textContent='You are on the list. Watch your inbox the week of November 23.';f.reset();}else{m.textContent='That did not go through. Try again.';}})
+.catch(function(){m.textContent='That did not go through. Try again.';})
+.then(function(){b.disabled=false;});});}
+wire('f1','m1');wire('f2','m2');
+})();
+</script>
+</body></html>
