@@ -33,9 +33,9 @@ details p{margin:10px 0 0}
 
 <section class="hero" style="margin-top:0">
 <h1>Know the most you should pay for any car in 10 seconds.</h1>
-<p class="sub">Most bad flips are lost at the purchase, not the sale. FlipMax finds real cars for sale near you and gives you one number before you hand over cash: the most you can pay and still hit your profit.</p>
+<p class="sub">Most bad flips are lost at the purchase, not the sale. FlipMax finds real cars for sale near you and gives you one number before you hand over cash, the most you can pay and still hit your profit.</p>
 <form class="form" id="f1"><input type="email" name="email" placeholder="Your email" autocomplete="email" required><button type="submit">Get early access</button></form>
-<p class="note">Launching on the iPhone App Store the week of November 23. Free to try. No card needed.</p>
+<p class="note">Launching on the iPhone App Store November 23rd. Free to try. No card needed.</p>
 <p class="msg" id="m1" role="status"></p>
 
 <div class="deal"><span class="tag">Example</span>
@@ -115,7 +115,7 @@ f.addEventListener('submit',function(e){e.preventDefault();var b=f.querySelector
 if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){m.textContent='Enter a valid email.';return;}
 b.disabled=true;m.textContent='Saving...';
 fetch(URL_,{method:'POST',headers:{'apikey':KEY,'Authorization':'Bearer '+KEY,'Content-Type':'application/json','Prefer':'return=minimal'},body:JSON.stringify({email:em,source:src})})
-.then(function(r){if(r.ok||r.status===409){m.textContent='You are on the list. Watch your inbox the week of November 23.';f.reset();}else{m.textContent='That did not go through. Try again.';}})
+.then(function(r){if(r.ok||r.status===409){m.textContent='You are on the list. Watch your inbox November 23rd.';f.reset();}else{m.textContent='That did not go through. Try again.';}})
 .catch(function(){m.textContent='That did not go through. Try again.';})
 .then(function(){b.disabled=false;});});}
 wire('f1','m1');wire('f2','m2');
