@@ -8,6 +8,7 @@
 .form{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
 .form input{flex:1 1 220px;padding:15px 16px;border-radius:14px;border:1px solid #2a382c;background:#0f1511;color:#fff;font-size:17px}
 .form button{flex:0 0 auto;padding:15px 22px;border-radius:14px;border:0;background:#3dff5a;color:#04130a;font-weight:800;font-size:17px;cursor:pointer}
+.dl{display:inline-block;padding:15px 22px;border-radius:14px;background:#3dff5a;color:#04130a;font-weight:800;font-size:17px;text-decoration:none;margin-top:22px}
 .note{font-size:15px;color:#8a968a;margin-top:10px}
 .msg{font-weight:700;color:#3dff5a;margin-top:12px;min-height:22px}
 .deal{border:1px solid #2c4a31;border-radius:20px;background:#0f1511;padding:20px;margin:36px 0 8px;box-shadow:0 0 60px rgba(61,255,90,.12)}
@@ -34,8 +35,9 @@ details p{margin:10px 0 0}
 <section class="hero" style="margin-top:0">
 <h1>Know the most you should pay for any car in 10 seconds.</h1>
 <p class="sub">Most bad flips are lost at the purchase, not the sale. FlipMax finds real cars for sale near you and gives you one number before you hand over cash, the most you can pay and still hit your profit.</p>
-<form class="form" id="f1"><input type="email" name="email" placeholder="Your email" autocomplete="email" required><button type="submit">Get early access</button></form>
-<p class="note">Launching soon on the iPhone App Store. Free to try. No card needed.</p>
+<a class="dl" href="https://apps.apple.com/app/id6836007477">Download on the App Store</a>
+<form class="form" id="f1" style="display:none"><input type="email" name="email" placeholder="Your email" autocomplete="email" required><button type="submit">Get early access</button></form>
+<p class="note">Free to try on iPhone. No card needed.</p>
 <p class="msg" id="m1" role="status"></p>
 
 <div class="deal"><span class="tag">Example</span>
@@ -58,6 +60,7 @@ details p{margin:10px 0 0}
 </ul>
 <h2>How FlipMax gets to one number</h2>
 <p>It works backward. FlipMax starts with the price the car should sell at fast in your area, then takes off your fees, your repairs and the profit you want. What is left is the most you should pay. If the seller wants more, you negotiate or walk.</p>
+<p>You put in your own costs: repairs, fees, title, detailing and the profit you want. FlipMax shows the math in one line. It also warns you when a price is far below market, so you check the car, the title and the seller before sending money.</p>
 </section>
 
 <section>
@@ -96,14 +99,16 @@ details p{margin:10px 0 0}
 </section>
 
 <section>
-<h2>Be first in when it opens</h2>
-<p>Drop your email and you will get the download link the morning FlipMax goes live.</p>
-<form class="form" id="f2"><input type="email" name="email" placeholder="Your email" autocomplete="email" required><button type="submit">Get early access</button></form>
+<h2>Get FlipMax on your iPhone</h2>
+<p>Free to try. No card and no account needed.</p>
+<a class="dl" href="https://apps.apple.com/app/id6836007477">Download on the App Store</a>
+<form class="form" id="f2" style="display:none"><input type="email" name="email" placeholder="Your email" autocomplete="email" required><button type="submit">Get early access</button></form>
 <p class="msg" id="m2" role="status"></p>
-<p class="note">One email at launch. We do not sell your email.</p>
+<p class="note">For iPhone in the United States.</p>
 </section>
 
-<footer><a href="/">Home</a><a href="/terms">Terms of Use</a><a href="/privacy">Privacy Policy</a><a href="mailto:flipmax.support@gmail.com">Support</a><p class="muted">FlipMax is operated by Stacy Maxxing LLC, Grand Junction, Colorado.</p></footer>
+
+<footer><a href="/">Home</a><a href="/terms">Terms of Use</a><a href="/privacy">Privacy Policy</a><a href="/support">Support</a><p class="muted">FlipMax is operated by Stacy Maxxing LLC, Grand Junction, Colorado.</p></footer>
 </main>
 <script>
 (function(){
