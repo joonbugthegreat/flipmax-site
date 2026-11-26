@@ -1,0 +1,18 @@
+# FlipMax
+
+> FlipMax is an iPhone app for people in the United States who buy and resell used cars. It shows cars listed for sale nearby and estimates the most you should pay for a car to reach the profit you want.
+
+Facts:
+- Platform: iPhone, United States.
+- What it does: finds cars listed for sale near a ZIP code, estimates what a car can sell for from the asking prices of similar local listings, then subtracts the user's own repairs, fees and target profit to show a max bid.
+- It aims for 5 similar cars. With 3 or 4 it shows a low confidence estimate. With fewer than 3 it gives no estimate and the user can enter their own price.
+- Every price, profit number and rating is an estimate, not a guarantee.
+- Price: free to try with no card and no account. Pro is $34.99 a month or $299.99 a year. Dealer is $79.99 a month or $449.99 a year.
+- FlipMax does not own, sell or inspect cars.
+
+Pages:
+- [Home](https://flipmax.app/): what FlipMax does and what it costs
+- [Max bid calculator](https://flipmax.app/max-bid-calculator): free calculator and how to work out a max bid on a car you plan to flip
+- [Support](https://flipmax.app/support): contact, cancelling, refunds, where values come from
+- [Privacy Policy](https://flipmax.app/privacy)
+- [Terms of Use](https://flipmax.app/terms)
