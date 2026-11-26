@@ -1,0 +1,121 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Max Bid Calculator for Used Cars You Plan to Flip | FlipMax</title>
+<meta name="description" content="Free max bid calculator for flipping cars. Enter what the car can sell for, your repairs, fees and the profit you want, and see the most you should pay.">
+<link rel="canonical" href="https://flipmax.app/max-bid-calculator">
+<meta property="og:title" content="Max Bid Calculator for Used Cars You Plan to Flip">
+<meta property="og:description" content="Enter what the car can sell for, your costs and the profit you want. See the most you should pay.">
+<meta property="og:url" content="https://flipmax.app/max-bid-calculator">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="/site.css">
+<style>
+.sub{font-size:19px;color:#dfe7df}
+.calc{border:1px solid #2c4a31;border-radius:20px;background:#0f1511;padding:20px;margin:28px 0 8px;box-shadow:0 0 60px rgba(61,255,90,.12)}
+.calc label{display:block;color:#fff;font-weight:700;margin:14px 0 6px}
+.calc label span{display:block;font-weight:400;font-size:15px;color:#8a968a}
+.calc .in{display:flex;align-items:center;border:1px solid #2a382c;border-radius:14px;background:#080b09;padding:0 14px}
+.calc .in i{font-style:normal;color:#8a968a;font-size:17px}
+.calc input{flex:1;min-width:0;padding:14px 8px;border:0;background:transparent;color:#fff;font-size:17px;outline:0}
+.calc .in:focus-within{border-color:#3dff5a}
+.out{margin-top:20px;padding-top:16px;border-top:1px solid #1f2a21}
+.out .tag{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8a968a}
+.out .n{font-size:44px;font-weight:900;color:#3dff5a;line-height:1.1;margin:4px 0}
+.out .n.bad{color:#ff6b5a;font-size:26px}
+.out .math{color:#c9d3c9;font-size:15px;margin:0}
+.note{font-size:15px;color:#8a968a;margin-top:10px}
+.dl{display:inline-block;padding:15px 22px;border-radius:14px;background:#3dff5a;color:#04130a;font-weight:800;font-size:17px;text-decoration:none;margin-top:14px}
+section{margin-top:48px}
+details{border-bottom:1px solid #1f2a21;padding:14px 0}summary{cursor:pointer;color:#fff;font-weight:700}
+details p{margin:10px 0 0}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebApplication","name":"FlipMax Max Bid Calculator","url":"https://flipmax.app/max-bid-calculator","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free calculator that works out the most you should pay for a used car you plan to resell, from the expected sale price, your costs and the profit you want."},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"What is a max bid on a car?","acceptedAnswer":{"@type":"Answer","text":"Your max bid is the most you can pay for a car and still reach the profit you want after repairs, fees and other costs. If the seller will not go that low, you walk away."}},
+{"@type":"Question","name":"How do you calculate the max bid for a car you plan to flip?","acceptedAnswer":{"@type":"Answer","text":"Start with what the car can sell for. Subtract your repairs, your fees and title costs, any other costs, and the profit you want. What is left is your max bid."}},
+{"@type":"Question","name":"What sell price should I use?","acceptedAnswer":{"@type":"Answer","text":"Look at several similar cars listed near you, same model, close in year and miles. Use the middle of those asking prices and take a little off, because asking prices are not selling prices."}},
+{"@type":"Question","name":"How much profit should I aim for on a flip?","acceptedAnswer":{"@type":"Answer","text":"That is your call. Pick a number that is worth your time and the risk on that car, and put it in before you look at the asking price. No calculator can promise a profit."}},
+{"@type":"Question","name":"Is the calculator free?","acceptedAnswer":{"@type":"Answer","text":"Yes. It runs in your browser, needs no account, and the numbers you type are not sent anywhere."}}
+]}]}
+</script>
+</head><body><main><a class="logo" href="/">Flip<b>Max</b></a>
+
+<h1>Max bid calculator for used cars</h1>
+<p class="sub">Before you buy a car to flip, work out your max bid. Start with what the car can sell for. Subtract your fees, your repairs and the profit you want. What is left is the most you should pay.</p>
+
+<div class="calc">
+<label for="sell">What the car can sell for<span>Middle of similar cars listed near you, a little under asking</span></label>
+<div class="in"><i>$</i><input id="sell" type="text" inputmode="decimal" autocomplete="off" value="8000"></div>
+<label for="rep">Repairs<span>Parts and labor to get it ready to sell</span></label>
+<div class="in"><i>$</i><input id="rep" type="text" inputmode="decimal" autocomplete="off" value="700"></div>
+<label for="fee">Fees and title<span>Title, registration, taxes, auction or listing fees</span></label>
+<div class="in"><i>$</i><input id="fee" type="text" inputmode="decimal" autocomplete="off" value="300"></div>
+<label for="oth">Other costs<span>Detail, gas, towing, anything else</span></label>
+<div class="in"><i>$</i><input id="oth" type="text" inputmode="decimal" autocomplete="off" value="0"></div>
+<label for="pro">Profit you want<span>Decide this before you see the asking price</span></label>
+<div class="in"><i>$</i><input id="pro" type="text" inputmode="decimal" autocomplete="off" value="1500"></div>
+<div class="out" role="status" aria-live="polite">
+<span class="tag">Your max bid</span>
+<div class="n" id="res">$5,500</div>
+<p class="math" id="math">$8,000 sale, minus $1,000 costs, minus $1,500 profit.</p>
+</div>
+</div>
+<p class="note">This is simple math on your own numbers, an estimate and not a guarantee of what a car will sell for. Nothing you type leaves your browser.</p>
+
+<section>
+<h2>How to work out a max bid</h2>
+<p>Work backward from the sale, not forward from the asking price.</p>
+<ol>
+<li><b>Estimate the sale price.</b> Find several similar cars for sale near you. Take the middle asking price and take a little off, because cars usually sell for less than they are listed for.</li>
+<li><b>Add up every cost.</b> Repairs, title, fees, a detail, tires. Small costs are the ones that get forgotten.</li>
+<li><b>Pick your profit first.</b> Choose the number that makes the car worth your time.</li>
+<li><b>Subtract.</b> Sale price minus costs minus profit is your max bid. Pay that or less, or walk away.</li>
+</ol>
+<p>Example: a car that can sell for $8,000, needs $700 in repairs and $300 in fees, with a $1,500 profit target, has a max bid of $5,500.</p>
+</section>
+
+<section>
+<h2>Three things that make the number wrong</h2>
+<ul>
+<li><b>Using one listing as the sale price.</b> One high asking price tells you little. Use several.</li>
+<li><b>Ignoring the miles.</b> A high mile car does not sell for what a low mile one does. Many listings leave the miles out, so check them yourself.</li>
+<li><b>Raising your max bid at the car.</b> Set the number at home. If the seller wants more, negotiate from what you find on the test drive, or leave.</li>
+</ul>
+</section>
+
+<section>
+<h2>Let your phone find the sale price</h2>
+<p>The hard part of this math is the first number. FlipMax is an iPhone app that estimates it from the asking prices of similar cars listed near you, then shows the most you should pay with your own costs and profit. When there are too few similar cars, it tells you and you can type your own price.</p>
+<a class="dl" href="/">See how FlipMax works</a>
+<p class="note">For iPhone in the United States. Free to try, no card needed.</p>
+</section>
+
+<section>
+<h2>Questions</h2>
+<details><summary>What is a max bid on a car?</summary><p>Your max bid is the most you can pay for a car and still reach the profit you want after repairs, fees and other costs. If the seller will not go that low, you walk away.</p></details>
+<details><summary>How do you calculate the max bid for a car you plan to flip?</summary><p>Start with what the car can sell for. Subtract your repairs, your fees and title costs, any other costs, and the profit you want. What is left is your max bid.</p></details>
+<details><summary>What sell price should I use?</summary><p>Look at several similar cars listed near you, same model, close in year and miles. Use the middle of those asking prices and take a little off, because asking prices are not selling prices.</p></details>
+<details><summary>How much profit should I aim for on a flip?</summary><p>That is your call. Pick a number that is worth your time and the risk on that car, and put it in before you look at the asking price. No calculator can promise a profit.</p></details>
+<details><summary>Is the calculator free?</summary><p>Yes. It runs in your browser, needs no account, and the numbers you type are not sent anywhere.</p></details>
+<details><summary>Do I need a dealer license to flip cars?</summary><p>That depends on your state. Most states limit how many cars a person can sell in a year without one. Check your state's rule.</p></details>
+</section>
+
+<footer><a href="/">Home</a><a href="/max-bid-calculator">Max Bid Calculator</a><a href="/terms">Terms of Use</a><a href="/privacy">Privacy Policy</a><a href="/support">Support</a><p class="muted">FlipMax is operated by Stacy Maxxing LLC, Grand Junction, Colorado.</p></footer>
+</main>
+<script>
+(function(){
+var ids=['sell','rep','fee','oth','pro'],res=document.getElementById('res'),math=document.getElementById('math');
+function num(id){var v=parseFloat(String(document.getElementById(id).value).replace(/[^0-9.]/g,''));return isFinite(v)?v:0;}
+function usd(n){return '$'+Math.round(n).toLocaleString('en-US');}
+function run(){
+var sell=num('sell'),costs=num('rep')+num('fee')+num('oth'),pro=num('pro'),bid=sell-costs-pro;
+if(sell<=0){res.className='n bad';res.textContent='Enter a sale price';math.textContent='Start with what the car can sell for.';return;}
+if(bid<=0){res.className='n bad';res.textContent='These numbers do not work';math.textContent='At a '+usd(sell)+' sale there is no room for '+usd(costs)+' in costs and '+usd(pro)+' profit. Change a number or walk away.';return;}
+res.className='n';res.textContent=usd(bid);
+math.textContent=usd(sell)+' sale, minus '+usd(costs)+' costs, minus '+usd(pro)+' profit.';
+}
+ids.forEach(function(id){document.getElementById(id).addEventListener('input',run);});
+run();
+})();
+</script>
+</body></html>
