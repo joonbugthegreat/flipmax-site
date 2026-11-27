@@ -1,0 +1,32 @@
+body{background:#07090a;font-family:Inter,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#e8ede9}
+.top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 32px;max-width:1240px;margin:0 auto}
+.top .logo{font-family:"Barlow Condensed",Impact,sans-serif;font-style:italic;font-weight:900;text-transform:uppercase;font-size:32px;color:#fff;text-decoration:none}
+.top .logo b{color:#3dff5a}
+.nav{display:flex;gap:26px;align-items:center;font-size:15px;font-weight:500}
+.nav a{color:#b8c2ba;text-decoration:none}.nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:#3dff5a;color:#04130a!important;font-weight:800;border-radius:12px;text-decoration:none}
+.nav .btn{padding:11px 18px}
+.ghero{border-bottom:1px solid #151c17;background:radial-gradient(800px 300px at 20% 0,rgba(61,255,90,.10),transparent)}
+.ghero .in{max-width:860px;margin:0 auto;padding:56px 32px 48px}
+.ghero .chip{display:inline-block;border:1px solid #23402a;background:#0d1a10;color:#8dff9c;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:999px;margin:0 0 18px}
+.ghero h1{font-family:"Barlow Condensed",Impact,sans-serif;font-style:italic;font-weight:900;text-transform:uppercase;letter-spacing:-.5px;line-height:.95;color:#fff;font-size:clamp(46px,7vw,80px);margin:0}
+.ghero .intro{font-size:20px;line-height:1.55;color:#b8c2ba;margin:22px 0 0}
+main.g{max-width:860px;margin:0 auto;padding:24px 32px 40px}
+main.g p,main.g li{color:#b8c2ba;font-size:17px;line-height:1.7}
+main.g h2{font-size:26px;color:#fff;margin:48px 0 10px;line-height:1.25}
+main.g ul{padding-left:20px}main.g li{margin:6px 0}main.g b{color:#fff}
+main.g a{color:#3dff5a}
+main.g table{width:100%;border-collapse:separate;border-spacing:0;margin:18px 0;font-size:15px;border:1px solid #1d2620;border-radius:14px;overflow:hidden}
+main.g th,main.g td{padding:12px 14px;border:0;border-bottom:1px solid #1d2620;text-align:left;vertical-align:top}
+main.g th{background:#0f2a14;color:#fff}main.g td{background:#0e1310;color:#b8c2ba}
+.tablewrap{overflow-x:auto}
+.cta{display:inline-flex;padding:16px 24px;border-radius:12px;background:#3dff5a;color:#04130a!important;font-weight:800;font-size:17px;text-decoration:none;margin-top:10px}
+.box{margin:48px 0 0;border-radius:20px;border:1px solid #23402a;background:#0d1a10;padding:28px}
+.box h2{margin-top:0!important}
+main.g section{margin-top:40px}
+details{border-bottom:1px solid #1d2620;padding:18px 0}summary{cursor:pointer;font-size:18px;font-weight:600;color:#fff}details p{margin:10px 0 0}
+.note{font-size:15px;color:#7f8b81}
+.foot{border-top:1px solid #151c17;margin-top:40px}.foot .in{max-width:1240px;margin:0 auto;padding:32px;display:flex;flex-wrap:wrap;gap:16px 22px;font-size:14px}
+.foot a{color:#9aa59c;text-decoration:none}.foot a:hover{color:#fff}.foot p{width:100%;margin:8px 0 0;font-size:13px;color:#6c776e}
+@media(max-width:860px){.nav a:not(.btn){display:none}}
+@media(max-width:560px){.top,.ghero .in,main.g,.foot .in{padding-left:20px;padding-right:20px}.ghero .in{padding-top:32px}.ghero .intro{font-size:18px}main.g h2{font-size:23px}.top .logo{font-size:28px}.nav .btn{padding:10px 14px;font-size:14px}.box{padding:22px}.cta{width:100%;justify-content:center}}
