@@ -1,0 +1,106 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Car Flipping Profit Calculator for Used Cars | FlipMax</title>
+<meta name="description" content="Free car flipping profit calculator. Enter the price you pay, repairs, fees and what the car can sell for, and see your estimated profit, including if it sells for less.">
+<link rel="canonical" href="https://flipmax.app/car-flipping-profit-calculator">
+<meta property="og:title" content="Car Flipping Profit Calculator for Used Cars">
+<meta property="og:description" content="See your estimated profit on a car flip before you buy, and what happens if it sells for less.">
+<meta property="og:url" content="https://flipmax.app/car-flipping-profit-calculator">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="/site.css">
+<style>
+.sub{font-size:19px;color:#dfe7df}
+.calc{border:1px solid #2c4a31;border-radius:20px;background:#0f1511;padding:20px;margin:28px 0 8px;box-shadow:0 0 60px rgba(61,255,90,.12)}
+.calc label{display:block;color:#fff;font-weight:700;margin:14px 0 6px}
+.calc label span{display:block;font-weight:400;font-size:15px;color:#8a968a}
+.calc .in{display:flex;align-items:center;border:1px solid #2a382c;border-radius:14px;background:#080b09;padding:0 14px}
+.calc .in i{font-style:normal;color:#8a968a;font-size:17px}
+.calc input{flex:1;min-width:0;padding:14px 8px;border:0;background:transparent;color:#fff;font-size:17px;outline:0}
+.calc .in:focus-within{border-color:#3dff5a}
+.out{margin-top:20px;padding-top:16px;border-top:1px solid #1f2a21}
+.out .tag{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8a968a}
+.out .n{font-size:44px;font-weight:900;line-height:1.1;margin:4px 0;color:#3dff5a}
+.out .n.bad{color:#ff6b5a}
+.out .math{color:#c9d3c9;font-size:15px;margin:0 0 6px}
+.note{font-size:15px;color:#8a968a;margin-top:10px}
+.dl{display:inline-block;padding:15px 22px;border-radius:14px;background:#3dff5a;color:#04130a;font-weight:800;font-size:17px;text-decoration:none;margin-top:14px}
+section{margin-top:48px}
+details{border-bottom:1px solid #1f2a21;padding:14px 0}summary{cursor:pointer;color:#fff;font-weight:700}
+details p{margin:10px 0 0}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebApplication","name":"FlipMax Car Flipping Profit Calculator","url":"https://flipmax.app/car-flipping-profit-calculator","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free calculator that estimates profit on a used car flip from the price paid, repairs, fees and the expected sale price, including a lower sale price."},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How do you calculate profit on a car flip?","acceptedAnswer":{"@type":"Answer","text":"Take what the car sells for. Subtract the price you paid, your repairs, and your fees like title, registration and listing costs. What is left is your profit before taxes."}},
+{"@type":"Question","name":"Why check a lower sale price?","acceptedAnswer":{"@type":"Answer","text":"Cars often sell for less than you hope, or take longer to sell. Checking a lower price shows whether the flip still works if that happens."}},
+{"@type":"Question","name":"Does this include taxes?","acceptedAnswer":{"@type":"Answer","text":"No. The result is before income taxes. Ask a tax professional how flipping income is taxed where you live."}},
+{"@type":"Question","name":"Is the calculator free?","acceptedAnswer":{"@type":"Answer","text":"Yes. It runs in your browser, needs no account, and the numbers you type are not sent anywhere."}}
+]}]}
+</script>
+</head><body><main><a class="logo" href="/">Flip<b>Max</b></a>
+
+<h1>Car flipping profit calculator</h1>
+<p class="sub">Check the numbers before you buy a car to flip. Start with what you think it can sell for. Take away the price you pay, your fees and your repairs. What is left is your estimated profit before taxes.</p>
+
+<div class="calc">
+<label for="buy">Price you pay<span>What you paid, or plan to pay, for the car</span></label>
+<div class="in"><i>$</i><input id="buy" type="text" inputmode="decimal" autocomplete="off" value="5500"></div>
+<label for="rep">Repairs<span>Parts and labor to get it ready to sell</span></label>
+<div class="in"><i>$</i><input id="rep" type="text" inputmode="decimal" autocomplete="off" value="700"></div>
+<label for="fee">Fees and other costs<span>Title, registration, taxes, listing, detail, gas</span></label>
+<div class="in"><i>$</i><input id="fee" type="text" inputmode="decimal" autocomplete="off" value="300"></div>
+<label for="sell">What it can sell for<span>Middle of similar cars listed near you, a little under asking</span></label>
+<div class="in"><i>$</i><input id="sell" type="text" inputmode="decimal" autocomplete="off" value="8000"></div>
+<div class="out" role="status" aria-live="polite">
+<span class="tag">Estimated profit</span>
+<div class="n" id="res"></div>
+<p class="math" id="math"></p>
+<p class="math" id="low"></p>
+</div>
+</div>
+<p class="note">Simple math on your own numbers, before income taxes. An estimate, not a guarantee of what a car will sell for. Nothing you type leaves your browser.</p>
+
+<section>
+<h2>How to read the result</h2>
+<ul>
+<li><b>Check the low case.</b> The calculator also shows your profit if the car sells for 10 percent less. If that turns into a loss, the deal is thin.</li>
+<li><b>Count your time.</b> A small profit on a car that takes weeks of work and selling may not be worth it.</li>
+<li><b>Work backward next time.</b> Decide the profit you want first, then find the most you can pay with the <a href="/max-bid-calculator">max bid calculator</a>.</li>
+</ul>
+<p>Looking at a car right now? Run the <a href="/is-this-car-a-good-deal">deal check</a> or take the free <a href="/before-you-buy-checklist.pdf">Before You Buy checklist</a> with you.</p>
+</section>
+
+<section>
+<h2>Let your phone find the sale price</h2>
+<p>FlipMax is an iPhone app for people who flip cars. It estimates what a car can sell for from the asking prices of similar cars listed near you, then shows the most you should pay and your estimated profit with your own costs.</p>
+<a class="dl" href="/">See how FlipMax works</a>
+<p class="note">For iPhone in the United States.</p>
+</section>
+
+<section>
+<h2>Questions</h2>
+<details><summary>How do you calculate profit on a car flip?</summary><p>Take what the car sells for. Subtract the price you paid, your repairs, and your fees like title, registration and listing costs. What is left is your profit before taxes.</p></details>
+<details><summary>Why check a lower sale price?</summary><p>Cars often sell for less than you hope, or take longer to sell. Checking a lower price shows whether the flip still works if that happens.</p></details>
+<details><summary>Does this include taxes?</summary><p>No. The result is before income taxes. Ask a tax professional how flipping income is taxed where you live.</p></details>
+<details><summary>Is the calculator free?</summary><p>Yes. It runs in your browser, needs no account, and the numbers you type are not sent anywhere.</p></details>
+</section>
+
+<footer><a href="/">Home</a><a href="/max-bid-calculator">Max Bid Calculator</a><a href="/is-this-car-a-good-deal">Deal Check</a><a href="/car-flipping-profit-calculator">Profit Calculator</a><a href="/terms">Terms of Use</a><a href="/privacy">Privacy Policy</a><a href="/support">Support</a><a href="https://www.instagram.com/flipmaxapp/">Instagram</a><a href="https://www.tiktok.com/@flipmaxapp">TikTok</a><p class="muted">FlipMax is operated by Stacy Maxxing LLC, Grand Junction, Colorado.</p></footer>
+</main>
+<script>
+(function(){
+var res=document.getElementById('res'),math=document.getElementById('math'),low=document.getElementById('low');
+function num(id){var v=parseFloat(String(document.getElementById(id).value).replace(/[^0-9.]/g,''));return isFinite(v)?v:0;}
+function usd(n){var s=Math.round(Math.abs(n)).toLocaleString('en-US');return (n<0?'-$':'$')+s;}
+function run(){
+var buy=num('buy'),rep=num('rep'),fee=num('fee'),sell=num('sell'),cost=buy+rep+fee,p=sell-cost,pl=sell*0.9-cost;
+if(sell<=0){res.className='n bad';res.textContent='Enter a sale price';math.textContent='';low.textContent='';return;}
+res.className=p<0?'n bad':'n';res.textContent=p<0?'Loss of '+usd(-p):usd(p);
+math.textContent=usd(sell)+' sale, minus '+usd(cost)+' all in ('+usd(buy)+' paid, '+usd(rep)+' repairs, '+usd(fee)+' fees).';
+low.textContent='If it sells for 10 percent less ('+usd(sell*0.9)+'): '+(pl<0?'loss of '+usd(-pl):usd(pl)+' profit')+'.';
+}
+['buy','rep','fee','sell'].forEach(function(id){document.getElementById(id).addEventListener('input',run);});
+run();
+})();
+</script>
+</body></html>

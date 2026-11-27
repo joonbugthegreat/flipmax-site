@@ -16,6 +16,7 @@ Pages:
 - [Home](https://flipmax.app/): what FlipMax does and what it costs
 - [Max bid calculator](https://flipmax.app/max-bid-calculator): free calculator and how to work out a max bid on a car you plan to flip
 - [Deal check](https://flipmax.app/is-this-car-a-good-deal): free check of whether a used car's asking price works for a flip, plus what to inspect
+- [Profit calculator](https://flipmax.app/car-flipping-profit-calculator): free estimate of profit on a car flip, including a 10 percent lower sale price
 - [Support](https://flipmax.app/support): contact, cancelling, refunds, where values come from
 - [Privacy Policy](https://flipmax.app/privacy)
 - [Terms of Use](https://flipmax.app/terms)
