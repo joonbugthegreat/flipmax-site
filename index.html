@@ -10,117 +10,172 @@
 ]}
 </script>
 <link rel="stylesheet" href="/site.css"><link rel="icon" id="fav" href="data:,"><script>addEventListener("DOMContentLoaded",function(){document.getElementById("fav").href=document.getElementById("lg").src})</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,800;1,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-.hero h1{font-size:40px;margin-top:44px}
-.sub{font-size:19px;color:#dfe7df}
-.form{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
-.form input{flex:1 1 220px;padding:15px 16px;border-radius:14px;border:1px solid #2a382c;background:#0f1511;color:#fff;font-size:17px}
-.form button{flex:0 0 auto;padding:15px 22px;border-radius:14px;border:0;background:#3dff5a;color:#04130a;font-weight:800;font-size:17px;cursor:pointer}
-.dl{display:inline-block;padding:15px 22px;border-radius:14px;background:#3dff5a;color:#04130a;font-weight:800;font-size:17px;text-decoration:none;margin-top:22px}
-.note{font-size:15px;color:#8a968a;margin-top:10px}
-.msg{font-weight:700;color:#3dff5a;margin-top:12px;min-height:22px}
-.deal{border:1px solid #2c4a31;border-radius:20px;background:#0f1511;padding:20px;margin:36px 0 8px;box-shadow:0 0 60px rgba(61,255,90,.12)}
-.deal .tag{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8a968a}
-.deal h3{margin:6px 0 2px;color:#fff;font-size:20px}
-.deal .row{display:flex;justify-content:space-between;padding:11px 0;border-top:1px solid #1f2a21;color:#c9d3c9}
-.deal .row b{color:#fff}.deal .row.big b{color:#3dff5a;font-size:19px}
-.rate{display:flex;align-items:center;gap:12px;margin:12px 0 14px}
-.rate .n{font-size:34px;font-weight:900;color:#3dff5a}
-.bar{flex:1;height:8px;border-radius:99px;background:#1f2a21;overflow:hidden}.bar i{display:block;height:100%;width:86%;background:#3dff5a}
-section{margin-top:56px}
-.steps{counter-reset:s;display:grid;gap:14px;margin-top:16px}
-.step{border:1px solid #1f2a21;border-radius:16px;padding:18px 18px 18px 62px;background:#0f1511;position:relative}
-.step:before{counter-increment:s;content:counter(s);position:absolute;left:18px;top:18px;width:30px;height:30px;border-radius:99px;background:#3dff5a;color:#04130a;font-weight:900;display:grid;place-items:center}
-.step h3{margin:0 0 4px;color:#fff;font-size:18px}.step p{margin:0}
-.plans{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:16px}
-.plan{border:1px solid #1f2a21;border-radius:16px;padding:18px;background:#0f1511}
-.plan h3{margin:0;color:#fff}.plan .p{font-size:26px;font-weight:900;color:#fff;margin:6px 0}.plan ul{padding-left:18px;margin:8px 0 0}
-.plan.hot{border-color:#3dff5a}
-details{border-bottom:1px solid #1f2a21;padding:14px 0}summary{cursor:pointer;color:#fff;font-weight:700}
-details p{margin:10px 0 0}
-</style></head><body><main><a class="logo" href="/"><img id="lg" alt="FlipMax logo" width="52" height="52" style="border-radius:13px;vertical-align:middle;margin-right:12px" src="data:image/png;base64,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">Flip<b>Max</b></a>
-
-<section class="hero" style="margin-top:0">
-<h1>Know the most you should pay before you buy.</h1>
+body{background:#07090a;font-family:Inter,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:#e8ede9}
+.w{max-width:1240px;margin:0 auto;padding:0 32px}
+.dsp{font-family:"Barlow Condensed",Impact,sans-serif;font-style:italic;font-weight:900;text-transform:uppercase;letter-spacing:-.5px;line-height:.92;color:#fff}
+.g{color:#3dff5a}
+p,li{color:#9aa59c}
+.top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 32px;max-width:1240px;margin:0 auto}
+.logo{font-family:"Barlow Condensed",Impact,sans-serif;font-style:italic;font-weight:900;text-transform:uppercase;font-size:32px;color:#fff;text-decoration:none;display:flex;align-items:center}
+.logo img{width:40px;height:40px;border-radius:10px;margin-right:10px}.logo b{color:#3dff5a}
+.nav{display:flex;gap:26px;align-items:center;font-size:15px;font-weight:500}
+.nav a{color:#b8c2ba;text-decoration:none}.nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;background:#3dff5a;color:#04130a!important;font-weight:800;border-radius:12px;text-decoration:none;border:0;cursor:pointer;font-family:inherit}
+.nav .btn{padding:11px 18px;font-size:15px}
+.hero{display:flex;flex-wrap:wrap;gap:56px;align-items:center;padding-top:48px;padding-bottom:88px}
+.hero .l{flex:999 1 520px;min-width:0}.hero .r{flex:1 1 340px;display:flex;justify-content:center}
+.chip{display:inline-block;border:1px solid #23402a;background:#0d1a10;color:#8dff9c;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:999px;margin:0 0 18px}
+.hero h1{font-size:clamp(56px,8vw,104px);margin:0}
+.sub{font-size:20px;line-height:1.55;color:#b8c2ba;max-width:580px;margin:26px 0 0}
+.what{font-size:16px;color:#7f8b81;max-width:580px}
+.form{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px;max-width:540px}
+.form input{flex:1 1 240px;min-width:0;height:56px;padding:0 18px;border-radius:12px;border:1px solid #2a382c;background:#0f1511;color:#fff;font-size:16px;font-family:inherit}
+.form button,.dl{height:56px;padding:0 24px;font-size:16px}
+.dl{margin-top:28px}
+.note{font-size:14px;color:#7f8b81;margin:12px 0 0}
+.msg{font-weight:700;color:#3dff5a;margin-top:10px;min-height:22px}
+.phone{width:340px;max-width:100%;border-radius:44px;border:10px solid #1b211d;background:#0b0f0c;padding:26px 20px 24px;box-shadow:0 40px 120px rgba(61,255,90,.18)}
+.phone .k{font-size:12px;color:#7f8b81;text-transform:uppercase;letter-spacing:.1em;margin:0}
+.phone h3{margin:6px 0 0;font-size:20px;color:#fff}
+.mx{margin:18px 0 0;border-radius:18px;background:#0f2a14;border:1px solid #2c5a33;padding:18px}
+.mx .k{color:#8dff9c;font-weight:600}.mx .dsp{font-size:64px;color:#3dff5a;margin:4px 0 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.two div{border-radius:14px;background:#121815;padding:14px}.two p{margin:0;font-size:12px;color:#7f8b81}.two b{display:block;font-size:20px;color:#fff;margin-top:4px}
+.rt{display:flex;align-items:center;gap:12px;margin-top:12px;border-radius:14px;background:#121815;padding:12px 14px}
+.rt .n{font-size:28px;font-weight:900;color:#3dff5a}.rt .bar{flex:1;height:8px;border-radius:99px;background:#1f2a21;overflow:hidden}.rt .bar i{display:block;height:100%;width:86%;background:#3dff5a}
+.verdict{margin-top:12px;border-radius:14px;background:#3dff5a;color:#04130a;text-align:center;padding:14px;font-weight:800}
+.band{background:#0a0d0b;border-top:1px solid #151c17;border-bottom:1px solid #151c17}
+.sec{padding-top:80px;padding-bottom:80px}
+.sec h2{font-size:clamp(40px,5vw,56px);margin:0}
+.lead{font-size:18px;margin:14px 0 0;max-width:760px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:36px}
+.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:32px}
+.card{border-radius:18px;border:1px solid #1d2620;background:#0e1310;padding:26px}
+.card .num{font-size:44px;color:#3dff5a}.card h3{margin:10px 0 8px;font-size:20px;color:#fff}.card p{margin:0;font-size:16px;line-height:1.55}
+.math{margin-top:36px;max-width:860px}.math h3{color:#fff;font-size:22px;margin:0 0 10px}.math p{font-size:16px;line-height:1.65}
+.step .b{width:48px;height:48px;border-radius:12px;background:#3dff5a;color:#04130a;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px}
+.step h3{margin:18px 0 8px;font-size:22px;color:#fff}.step p{margin:0;font-size:16px;line-height:1.55}
+.tool{display:block;text-decoration:none;border-radius:16px;border:1px solid #23402a;background:#0d1a10;padding:22px;transition:border-color .15s}
+.tool:hover{border-color:#3dff5a}.tool b{display:block;font-size:18px;color:#fff}.tool span{display:block;margin-top:6px;font-size:14px;color:#9aa59c}
+.guides{margin-top:22px;font-size:15px;color:#7f8b81}
+.plan{border-radius:20px;border:1px solid #1d2620;background:#0e1310;padding:28px}
+.plan.hot{border:2px solid #3dff5a;background:#0d1a10}
+.plan .t{margin:0;font-size:15px;font-weight:700;color:#9aa59c;text-transform:uppercase;letter-spacing:.08em}.plan.hot .t{color:#8dff9c}
+.plan .dsp{font-size:56px;margin:10px 0 0}.plan .dsp small{font-size:22px;color:#9aa59c}
+.plan ul{margin:18px 0 0;padding-left:18px;font-size:15px;line-height:1.9}.plan li{color:#b8c2ba}
+.plan .y{font-size:13px;color:#7f8b81;margin:14px 0 0}
+.faq{max-width:880px}
+details{border-bottom:1px solid #1d2620;padding:18px 0}summary{cursor:pointer;font-size:18px;font-weight:600;color:#fff}details p{margin:10px 0 0}
+.end{text-align:center;padding-top:96px;padding-bottom:96px}.end h2{font-size:clamp(52px,7vw,84px);margin:0}
+.end .form,.end .dl{margin-left:auto;margin-right:auto;justify-content:center}
+.foot{border-top:1px solid #151c17}.foot .w{padding-top:32px;padding-bottom:40px;display:flex;flex-wrap:wrap;gap:16px 22px;font-size:14px}
+.foot a{color:#9aa59c;text-decoration:none}.foot a:hover{color:#fff}.foot p{width:100%;margin:8px 0 0;font-size:13px;color:#6c776e}
+@media(max-width:860px){.nav a:not(.btn){display:none}.grid3{grid-template-columns:1fr}.grid4{grid-template-columns:1fr 1fr}.hero{padding-top:24px;gap:40px}}
+@media(max-width:560px){.w,.top{padding-left:20px;padding-right:20px}.sec{padding-top:56px;padding-bottom:56px}.sub{font-size:17px}.form button,.dl{width:100%}.grid4{grid-template-columns:1fr}.card{padding:20px}.plan{padding:22px}.logo{font-size:28px}.nav .btn{padding:10px 14px;font-size:14px}}
+</style></head><body>
+<header class="top"><a class="logo" href="/"><img id="lg" alt="FlipMax logo" width="52" height="52" style="border-radius:13px;vertical-align:middle;margin-right:12px" src="data:image/png;base64,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">Flip<b>Max</b></a>
+<nav class="nav"><a href="#how">How it works</a><a href="#tools">Free tools</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a class="btn" href="#join">Get early access</a></nav></header>
+<main style="max-width:none;padding:0">
+<section class="w hero" id="join">
+<div class="l">
+<p class="chip">iPhone app for car flippers</p>
+<h1 class="dsp">Know your<br><span class="g">max bid</span><br>before you buy.</h1>
 <p class="sub">Most bad flips are lost at the purchase, not the sale. FlipMax shows cars listed for sale near you and works out one number before you hand over cash, an estimate of the most you can pay and still hit your profit.</p>
-<p>FlipMax is an iPhone app for people in the United States who buy and resell used cars. It estimates the most you should pay for a car from the asking prices of similar cars listed near you.</p>
-<a class="dl" href="https://apps.apple.com/app/id6836007477">Download on the App Store</a>
-<form class="form" id="f1" style="display:none"><input type="email" name="email" placeholder="Your email" autocomplete="email" required><button type="submit">Get early access</button></form>
+<p class="what">FlipMax is an iPhone app for people in the United States who buy and resell used cars. It estimates the most you should pay for a car from the asking prices of similar cars listed near you.</p>
+<a class="dl btn" href="https://apps.apple.com/app/id6836007477">Download on the App Store</a>
+<form class="form" id="f1" style="display:none"><input type="email" name="email" placeholder="you@email.com" autocomplete="email" aria-label="Your email" required><button class="btn" type="submit">Get early access</button></form>
 <p class="note prelaunch" style="display:none">Coming soon to the App Store. Leave your email and we will tell you the day it is out.</p>
 <p class="note">Free to try on iPhone. No card needed.</p>
 <p class="msg" id="m1" role="status"></p>
-
-<div class="deal"><span class="tag">Example</span>
-<h3>2015 Toyota Camry SE</h3><span class="note" style="margin:0">128,000 miles</span>
-<div class="rate"><span class="n">86</span><div style="flex:1"><div class="note" style="margin:0 0 6px">FlipMax Rating, strong flip</div><div class="bar"><i></i></div></div></div>
-<div class="row"><span>Asking price</span><b>$4,900</b></div>
-<div class="row big"><span>Most you should pay</span><b>$5,400</b></div>
-<div class="row"><span>Estimated profit</span><b>$1,600</b></div>
 </div>
-<p class="note">Example only. Numbers are estimates, not guarantees.</p>
+<div class="r"><div class="phone">
+<p class="k">Example Deal Check</p>
+<h3>2015 Toyota Camry SE</h3><p style="margin:2px 0 0;font-size:14px;color:#7f8b81">128,000 miles</p>
+<div class="mx"><p class="k">Most you should pay</p><p class="dsp">$5,400</p></div>
+<div class="two"><div><p>Asking price</p><b>$4,900</b></div><div><p>Est. profit</p><b>$1,600</b></div></div>
+<div class="rt"><span class="n">86</span><div style="flex:1"><p style="margin:0 0 6px;font-size:12px;color:#7f8b81">FlipMax Rating, strong flip</p><div class="bar"><i></i></div></div></div>
+<div class="verdict">Asking is under your max. Check the car.</div>
+<p style="margin:12px 0 0;font-size:11px;color:#6c776e;text-align:center">Example only. Numbers are estimates, not guarantees.</p>
+</div></div>
 </section>
 
-<section>
-<h2>Why good looking deals turn into losses</h2>
-<p>You are not bad at flipping. It is easy to start from the wrong number.</p>
-<ul>
-<li><b>Asking prices are not selling prices.</b> One high listing tells you little. FlipMax takes the middle of several similar asking prices and takes a little off, and the real sale can still differ.</li>
-<li><b>Miles change everything.</b> A 250,000 mile car does not sell for what a low mile one does. Many listings leave the miles out, so an estimate is often not adjusted for them. Check the miles yourself.</li>
-<li><b>The small costs get forgotten.</b> Title, fees, a set of tires and a detail can eat the whole profit.</li>
-</ul>
-<h2>How FlipMax gets to one number</h2>
+<section class="band"><div class="w sec">
+<h2 class="dsp">Why good looking deals turn into losses</h2>
+<p class="lead">You are not bad at flipping. It is easy to start from the wrong number.</p>
+<div class="grid3">
+<div class="card"><p class="dsp num">01</p><h3>Asking prices are not selling prices</h3><p>One high listing tells you little. FlipMax takes the middle of several similar asking prices and takes a little off, and the real sale can still differ.</p></div>
+<div class="card"><p class="dsp num">02</p><h3>Miles change everything</h3><p>A 250,000 mile car does not sell for what a low mile one does. Many listings leave the miles out, so an estimate is often not adjusted for them. Check the miles yourself.</p></div>
+<div class="card"><p class="dsp num">03</p><h3>The small costs get forgotten</h3><p>Title, fees, a set of tires and a detail can eat the whole profit.</p></div>
+</div>
+<div class="math"><h3>How FlipMax gets to one number</h3>
 <p>It works backward. FlipMax estimates what the car can sell for from similar cars listed near you, then takes off your fees, your repairs and the profit you want. What is left is the most you should pay. If the seller wants more, you negotiate or walk. You can try the math yourself with the free <a href="/max-bid-calculator">max bid calculator</a> or the <a href="/car-flipping-profit-calculator">profit calculator</a>. FlipMax aims for 5 similar cars. It looks at cars within 2 model years first, then widens to 4 model years and then to a wider area. With only 3 or 4 similar cars it can still show an estimate, marked low confidence, and it says how many cars it used. With fewer than 3 it says there are not enough local sales to price it, and you can type your own price.</p>
-<p>You put in your own costs: repairs, fees, title, detailing and the profit you want. FlipMax shows the math in one line. It also warns you when a price is far below market, so you check the car, the title and the seller before sending money.</p>
-</section>
+<p>You put in your own costs: repairs, fees, title, detailing and the profit you want. FlipMax shows the math in one line. It also warns you when a price is far below market, so you check the car, the title and the seller before sending money.</p></div>
+</div></section>
 
-<section>
-<h2>Three steps, about a minute</h2>
-<div class="steps">
-<div class="step"><h3>Find cars near you</h3><p>Cars listed for sale near you in the last 30 days, newest first. Filter by make, model, price and distance.</p></div>
-<div class="step"><h3>Check the deal</h3><p>Scan the VIN or pick the car. When there are enough similar cars, get a FlipMax Rating from 0 to 100, the most you should pay, and estimated days to sell.</p></div>
-<div class="step"><h3>Track the flip</h3><p>Your Garage keeps every car, repair and sale, so you always know what you really made.</p></div>
+<section class="w sec" id="how">
+<h2 class="dsp">Three steps, about a minute</h2>
+<div class="grid3">
+<div class="step"><div class="b">1</div><h3>Find cars near you</h3><p>Cars listed for sale near you in the last 30 days, newest first. Filter by make, model, price and distance.</p></div>
+<div class="step"><div class="b">2</div><h3>Check the deal</h3><p>Scan the VIN or pick the car. When there are enough similar cars, get a FlipMax Rating from 0 to 100, the most you should pay, and estimated days to sell.</p></div>
+<div class="step"><div class="b">3</div><h3>Track the flip</h3><p>Your Garage keeps every car, repair and sale, so you always know what you really made.</p></div>
 </div>
 </section>
 
-<section>
-<h2>Try it before you pay anything</h2>
-<p>You get 5 searches and 1 full Deal Check free. No card, no account. If it does not save you from one bad buy, delete it and you have lost nothing. Paid plans can be cancelled any time in your Apple settings.</p>
-<div class="plans">
-<div class="plan"><h3>Free</h3><div class="p">$0</div><ul><li>5 searches</li><li>1 full Deal Check</li><li>1 car in your Garage</li></ul></div>
-<div class="plan hot"><h3>Pro</h3><div class="p">$34.99<span class="note"> a month</span></div><ul><li>Unlimited searches</li><li>Up to 50 cars per search</li><li>100 Deal Checks a month</li><li>Garage up to 5 cars</li></ul></div>
-<div class="plan"><h3>Dealer</h3><div class="p">$79.99<span class="note"> a month</span></div><ul><li>Unlimited searches</li><li>300 Deal Checks a month</li><li>Auction tools</li><li>Unlimited Garage</li></ul></div>
+<section class="band" id="tools"><div class="w sec">
+<h2 class="dsp">Free tools, no download</h2>
+<div class="grid4">
+<a class="tool" href="/max-bid-calculator"><b>Max bid calculator</b><span>The most you should pay</span></a>
+<a class="tool" href="/is-this-car-a-good-deal"><b>Deal check</b><span>Is this car a good flip?</span></a>
+<a class="tool" href="/car-flipping-profit-calculator"><b>Profit calculator</b><span>What you keep after costs</span></a>
+<a class="tool" href="/before-you-buy-checklist.pdf"><b>Before You Buy checklist</b><span>Free one page PDF</span></a>
 </div>
-<p class="note">Yearly plans: Pro $299.99, Dealer $449.99. Unlimited searches are subject to daily fair use limits per phone, which also cover price checks.</p>
+<p class="guides">Guides: <a href="/how-to-find-cars-to-flip">How to find cars to flip</a> · <a href="/car-flipping-costs">Car flipping costs</a> · <a href="/best-cars-to-flip">Best cars to flip</a></p>
+</div></section>
+
+<section class="w sec" id="pricing">
+<h2 class="dsp">Try it before you pay anything</h2>
+<p class="lead">You get 5 searches and 1 full Deal Check free. No card, no account. If it does not save you from one bad buy, delete it and you have lost nothing. Paid plans can be cancelled any time in your Apple settings.</p>
+<div class="grid3">
+<div class="plan"><p class="t">Free</p><p class="dsp">$0</p><ul><li>5 searches</li><li>1 full Deal Check</li><li>1 car in your Garage</li></ul></div>
+<div class="plan hot"><p class="t">Pro</p><p class="dsp">$34.99<small> /mo</small></p><ul><li>Unlimited searches</li><li>Up to 50 cars per search</li><li>100 Deal Checks a month</li><li>Garage up to 5 cars</li></ul><p class="y">Or $299.99 a year</p></div>
+<div class="plan"><p class="t">Dealer</p><p class="dsp">$79.99<small> /mo</small></p><ul><li>Unlimited searches</li><li>300 Deal Checks a month</li><li>Auction tools</li><li>Unlimited Garage</li></ul><p class="y">Or $449.99 a year</p></div>
+</div>
+<p class="note">Unlimited searches are subject to daily fair use limits per phone, which also cover price checks.</p>
 </section>
 
-<section>
-<h2>Built for people who actually flip</h2>
-<p>FlipMax was shaped with a flipper who buys and sells cars every week. Every number is an estimate you can check and change: set your own sell price, your own costs and the profit you want.</p>
-</section>
+<section class="band"><div class="w sec">
+<h2 class="dsp">Built for people who actually flip</h2>
+<p class="lead">FlipMax was shaped with a flipper who buys and sells cars every week. Every number is an estimate you can check and change: set your own sell price, your own costs and the profit you want.</p>
+</div></section>
 
-<section>
-<h2>Questions</h2>
+<section class="w sec faq" id="faq">
+<h2 class="dsp">Questions</h2>
+<div style="margin-top:22px">
 <details><summary>Is it really free to try?</summary><p>Yes. 5 searches and 1 full Deal Check with no card and no account.</p></details>
 <details><summary>Where do the cars come from?</summary><p>Public Facebook Marketplace listings near you from the last 30 days, written by their sellers. Price estimates come from the asking prices of similar listings. FlipMax is not affiliated with Facebook or Meta, and we do not own, sell or inspect the cars.</p></details>
 <details><summary>Is the profit guaranteed?</summary><p>No. Every price, profit number and rating is an estimate. Always inspect the car and check the title yourself before you buy.</p></details>
 <details><summary>What phones does it work on?</summary><p>iPhone at launch, in the United States.</p></details>
 <details><summary>Do I need a dealer license?</summary><p>That depends on your state. Most states limit how many cars a person can sell in a year without one. Check your state's rule.</p></details>
 <details><summary>How do I cancel?</summary><p>Any time, in your Apple Account settings under Subscriptions.</p></details>
+</div>
 </section>
 
-<section>
-<h2>Get FlipMax on your iPhone</h2>
-<p>Free to try. No card and no account needed.</p>
-<a class="dl" href="https://apps.apple.com/app/id6836007477">Download on the App Store</a>
-<form class="form" id="f2" style="display:none"><input type="email" name="email" placeholder="Your email" autocomplete="email" required><button type="submit">Get early access</button></form>
+<section class="w end">
+<h2 class="dsp">Stop overpaying<br>for <span class="g">flips.</span></h2>
+<p class="lead" style="margin:18px auto 0">Get FlipMax on your iPhone. Free to try, no card and no account needed.</p>
+<a class="dl btn" href="https://apps.apple.com/app/id6836007477">Download on the App Store</a>
+<form class="form" id="f2" style="display:none"><input type="email" name="email" placeholder="you@email.com" autocomplete="email" aria-label="Your email" required><button class="btn" type="submit">Get early access</button></form>
 <p class="msg" id="m2" role="status"></p>
 <p class="note">For iPhone in the United States.</p>
 </section>
-
-
-<p class="note">Guides: <a href="/how-to-find-cars-to-flip">How to find cars to flip</a> · <a href="/car-flipping-costs">Car flipping costs</a> · <a href="/best-cars-to-flip">Best cars to flip</a></p>
-<footer><a href="/">Home</a><a href="/max-bid-calculator">Max Bid Calculator</a><a href="/is-this-car-a-good-deal">Deal Check</a><a href="/car-flipping-profit-calculator">Profit Calculator</a><a href="/terms">Terms of Use</a><a href="/privacy">Privacy Policy</a><a href="/support">Support</a><a href="https://www.instagram.com/flipmaxapp/">Instagram</a><a href="https://www.tiktok.com/@flipmaxapp">TikTok</a><p class="muted">FlipMax is operated by Stacy Maxxing LLC, Grand Junction, Colorado.</p></footer>
 </main>
+<footer class="foot" style="margin:0;padding:0;border-top:1px solid #151c17"><div class="w">
+<a href="/">Home</a><a href="/max-bid-calculator">Max Bid Calculator</a><a href="/is-this-car-a-good-deal">Deal Check</a><a href="/car-flipping-profit-calculator">Profit Calculator</a><a href="/terms">Terms of Use</a><a href="/privacy">Privacy Policy</a><a href="/support">Support</a><a href="https://www.instagram.com/flipmaxapp/">Instagram</a><a href="https://www.tiktok.com/@flipmaxapp">TikTok</a>
+<p>FlipMax is operated by Stacy Maxxing LLC, Grand Junction, Colorado. Not affiliated with Facebook or Meta. Every number is an estimate.</p>
+</div></footer>
 <script>
 (function(){
 var URL_='https://exwxkfnyvjivudmctiqb.supabase.co/rest/v1/waitlist';
